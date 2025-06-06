@@ -13,16 +13,19 @@
 <body>
     <div id="notification" class="notification"></div>
     <div class="header">
-            <a href="index.html" class="logoLink">TWoody</a>
-            <a href="create_post.html" class="btnHeader">+ Create</a>
-            <a href="login.html" class="btnHeader">Log-in</a>
-        </div>
+        <a href="index.html" class="logoLink">TWoody</a>
+        <a href="create_post.html" class="btnHeader">+ Create</a>
+        <a href="login.html" class="btnHeader">Log-in</a>
+    </div>
         
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="#">Popular</a>
-        <a href="#">All</a>
-        <h3 class="titre">RECENT</h3>
+    <input type="button" value="≡" class="openSidebar" id="openSidebar" onclick="openSidebar()">
+    <div class="sidebar" id="sidebar">
+        <div class="content_sidebar" id="content_sidebar">
+            <a href="index.html">Home</a>
+            <a href="#">Popular</a>
+            <a href="#">All</a>
+            <h3 class="titre">RECENT</h3>
+        </div>
     </div>
         <div class="registerForm">
 
