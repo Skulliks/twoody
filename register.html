@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href=".\styles\style.css">
+    <link rel="stylesheet" href=".\styles\registration_styles.css">
+    <script src=".\scripts\registration.js"></script>
+    <script src=".\scripts\main_script.js"></script>
 </head>
 
 <body>
+    <div id="notification" class="notification"></div>
     <div class="header">
             <a href="index.html" class="logoLink">TWoody</a>
             <a href="create_post.html" class="btnHeader">+ Create</a>
@@ -25,45 +28,43 @@
 
             <h2>Register</h2>
 
-            <div class="usernameInput">
-                <label for="username">Username:</label><p></p>
+            <p class="usernameInput">
+                <label for="username" class="inputFieldText">Username:</label><p></p>
                 <input type="text" id="username" name="username" required class="inputField">
-            </div>
+            </p>
 
-            <div class="emailInput">
-                <label for="email">Email:</label><p></p>
+            <p class="emailInput">
+                <label for="email" class="inputFieldText">Email:</label><p></p>
                 <input type="email" id="email" name="email" required class="inputField">
-            </div>
+            </p>
 
-            <div class="confirmEmailInput">
-                <label for="confirmEmail">Confirm Email:</label><p></p>
+            <p class="confirmEmailInput">
+                <label for="confirmEmail" class="inputFieldText">Confirm email:</label><p></p>
                 <input type="email" id="confirmEmail" name="confirmEmail" required class="inputField">
-            </div>
+            </p>
 
-            <div class="passwordInput">
-                <label for="password">Password:</label><p></p>
+            <p class="passwordInput">
+                <label for="password" class="inputFieldText">Password:</label><p></p>
                 <input type="password" id="password" name="password" required class="inputField">
-            </div>
+            </p>
 
-            <div class="confirmPasswordInput">
-                <label for="confirmPassword">Confirm Password:</label><p></p>
+            <p class="confirmPasswordInput">
+                <label for="confirmPassword" class="inputFieldText">Confirm password:</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required class="inputField">
-            </div>
+            </p>
 
-            <div class="termsInput">
+            <p class="termsInput">
                 <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I agree to the terms and conditions</label>
-            </div>
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </p>
 
-            <div class="privacyInput">
-                <input type="checkbox" id="privacy" name="privacy" required>
-                <label for="privacy">I agree to the privacy policy</label>
-            </div>
+            <p class="privacyInput">
+                <input type="checkbox" id="privacy" name="privacy">
+                <label for="privacy">I agree to the Privacy Policy</label>
+            </p>
             
             <input type="button" value="Register" class="btnRegister" onclick="registerUser()">
-            <h4 id="passwordNotSimilar">Passwords don't match</h4>
-            <h4 id="emailNotSimilar">Emails don't match</h4>
-            <div class="forReg"><p>Already have an account? <a href="login.html" class="aReg">Login here</a></p></div>
-
+            <div class="forReg"><p>Already have an account? <a href="login.html" class="aReg">Log in here</a></p></div>
+<script src="registration.js"></script>
 </body>
 </html>

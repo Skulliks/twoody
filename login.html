@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
+    <link rel="stylesheet" href=".\styles\style.css">
+    <link rel="stylesheet" href=".\styles\login_styles.css">
+    <script src=".\scripts\login.js"></script>
+    <script src=".\scripts\main_script.js"></script>
+
 </head>
 
 <body>
+    <div id="notification" class="notification"></div>
     <div class="header">
             <a href="index.html" class="logoLink">TWoody</a>
             <a href="create_post.html" class="btnHeader">+ Create</a>
@@ -22,18 +26,20 @@
             <h3 class="titre">RECENT</h3>
         </div>
 
+
+
         <div class="loginForm">
             <h2>Login</h2>
-            <div class="usernameInput">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="passwordInput">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+            <p class="usernameInput">
+                <label for="username" class="inputFieldText">Username:</label><p></p>
+                <input type="text" id="username" name="username" required class="inputField">
+            </p>
+            <p class="passwordInput">
+                <label for="password" class="inputFieldText">Password:</label><p></p>
+                <input type="password" id="password" name="password" required class="inputField">
+            </p>
 
-                <input type="submit" value="Login">
+                <input type="button" class="btnLogin" value="Login" onclick="loginUser()">
             <div class="forReg"></class><p>Don't have an account? <a href="register.html" class="aReg">Register here</a></p></div>
         </div>
 </body>
