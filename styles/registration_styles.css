@@ -1,0 +1,70 @@
+.registerForm {
+    background-color: #325868;
+    width: 500px;                /* Фиксированная ширина */
+    margin: 100px auto 20px auto;/* Центрирование по горизонтали */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;          /* Центрируем содержимое */
+    box-sizing: border-box;      /* Чтобы padding не увеличивал ширину */
+}
+
+.registerForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btnRegister {
+    display: block;
+    margin: 20px auto 0 auto; /* сверху 20px, по бокам auto, снизу 0 */
+    background-color: #497489;
+    color: white;
+    padding: 10px 100px; /* 10px сверху и снизу, 100px слева и справа */
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center; /* не обязательно для кнопки, но можно оставить */
+}
+
+.btnRegister:hover {
+    background-color: #3f6374;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.inputField {
+    font-size: 14px;
+    height: 15px;
+    width: 97%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.inputFieldText {
+    font-size: 20px;
+}
+
+
+.termsInput {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+.privacyInput {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+
+.aReg {
+    color: white;
+}
+
+.forReg {
+    margin-top: 20px;
+    font-size: 12px;
+}

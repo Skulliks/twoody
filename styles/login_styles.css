@@ -1,0 +1,59 @@
+.aReg {
+    color: white;
+}
+
+.loginForm {
+    background-color: #325868;
+    width: 400px;                /* Фиксированная ширина */
+    margin: 150px auto 20px auto;/* Центрирование по горизонтали */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;          /* Центрируем содержимое */
+    box-sizing: border-box; 
+}
+
+.loginForm h2 {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.btnLogin {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 100px; /* 10px сверху и снизу, 100px слева и справа */
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center; /* не обязательно для кнопки, но можно оставить */
+    margin-top: 20px;
+    background-color: #497489;
+    color: white;
+}
+
+.btnLogin:hover {
+    background-color: #3f6374;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.inputField {
+    font-size: 14px;
+    height: 15px;
+    width: 97%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.inputFieldText {
+    font-size: 20px;
+}
+
+
+.forReg {
+    margin-top: 20px;
+    font-size: 12px;
+}

@@ -1,0 +1,17 @@
+.content {
+    margin: 90px auto 0 auto; 
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.post {
+    display: block;
+    background-color: #29444f;
+    padding: 2% 12% 2% 12%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
