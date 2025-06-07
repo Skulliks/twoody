@@ -9,18 +9,23 @@ function showNotification(message) {
     }, 3000);
 }
 
-isOpen = true;
+isOpen = false;
 
-const sidebar = document.getElementById('sidebar')
-const content_sidebar = document.getElementById('content_sidebar')
-const openSidebar = document.getElementById('openSidebar')
+function openSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const openSidebar = document.getElementById('openSidebar');
+    const content_sidebar = document.getElementById('content_sidebar');
 
-if(isOpen == false){
-    openSidebar.style.marginLeft = '12.5%';
-    sidebar.style.width = '12%';
-    content_sidebar.style.visibility = 'visible';
-}
-
-function openSidebar(){
-    isOpen = false;
+    if (isOpen !== true){
+        sidebar.classList.add('open');
+        openSidebar.classList.add('open');
+        content_sidebar.style.visibility = 'visible';
+        isOpen = true;
+    }
+    else{
+        sidebar.classList.remove('open');
+        openSidebar.classList.remove('open');
+        content_sidebar.style.visibility = 'hidden';
+        isOpen = false;
+    }
 }

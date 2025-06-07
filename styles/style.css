@@ -20,6 +20,9 @@ body {
 
 .openSidebar {
     position: fixed;
+    left: 0;
+    transform: translateX(10px);
+    transition: transform 0.2s ease, background-color 0.3s ease;
     z-index: 1001;
     width: 50px;
     height: 50px;
@@ -35,27 +38,34 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px;
 }
 
 .openSidebar:hover {
     background-color: #497489;
-    transition: background-color 0.3s ease;
+}
+
+.openSidebar.open {
+    transform: translateX(calc(12vw + 10px));
 }
 
 .sidebar {
-    margin: 0;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 0vw;
+    height: 100vh;
+    transition: width 0.2s ease;
     background-color: #385a69;
     padding: 20px;
-    top: 0;
     padding-top: 89px;
-    width: 0%;
-    height: 100%;
-    position:fixed;
-    display: block;
     height: 100vh;
     overflow-y: auto;
     z-index: 999;
+    display: block;
+}
+
+.sidebar.open {
+    width: 12vw;
 }
 
 .sidebar a {
