@@ -1,0 +1,118 @@
+.create_post {
+    background-color: #325868;
+    padding: 3%;
+    margin-top: 150px;
+    color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+.title_create_post {
+    text-align: center;
+}
+
+.nameTitle {
+    padding-top: 20px;
+}
+
+.h2_content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inputField {
+    font-size: 14px;
+    height: 15px;
+    width: 97%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.inputFieldContent {
+    font-size: 14px;
+    width: 97%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+    visibility: hidden;
+    height: 0;
+    transition: height 0.3s ease, visibility 0.3s ease;
+}
+
+.inputFieldContent.show {
+    visibility: visible;
+    height: 160px;
+}
+
+textarea {
+    resize: none;
+}
+
+.inputFieldLocation, .nameTitleLocation {
+    visibility: hidden;
+    height: 0px;
+    transition: height 0.3s ease, visibility 0.3s ease;
+}
+
+
+.inputFieldLocation.show, .nameTitleLocation.show{
+    visibility: visible;
+    height: 15px;
+}
+
+.fileDrop {
+     
+}
+
+.fileDrop.show {
+    
+}
+
+.btnCreate {
+    padding: 10px 100px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center; 
+    background-color: #497489;
+    color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: margin 0.3s ease;
+}
+
+
+.btnsAdditionInformation {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.btnLocation, .btnTextOfPost, .btnFile {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #497489;
+    color: white;
+    margin:  0 10px 0 10px;
+}
+
+.btnCreate:hover, .btnLocation:hover, .btnTextOfPost:hover, .btnFile:hover {
+    background-color: #3f6374;
+    transition: background-color 0.3s ease; 
+}
+

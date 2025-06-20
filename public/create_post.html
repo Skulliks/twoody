@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New post</title>
+    <link rel="stylesheet" href=".\styles\style.css">
+    <link rel="stylesheet" href=".\styles\create_post.css">
+    <script src=".\scripts\create_post.js"></script>
+    <script src=".\scripts\main_script.js"></script>
+
+</head>
+
+<body>
+    <div id="notification" class="notification"></div>
+    <div class="header">
+        <a href="index.html" class="logoLink">TWoody</a>
+        <a href="create_post.html" class="btnHeader">+ Create</a>
+        <a href="login.html" class="btnHeader">Log-in</a>
+    </div>
+        
+    <input type="button" value="≡" class="openSidebar" id="openSidebar" onclick="openSidebar()">
+    <div class="sidebar" id="sidebar">
+        <div class="content_sidebar" id='content_sidebar'>
+            <a href="index.html">Home</a>
+            <a href="#">Popular</a>
+            <a href="#">All</a>
+            <h3 class="titre">RECENT</h3>
+        </div>
+    </div>
+
+    <div class="create_post">
+        <div class="content_creation_post">
+
+            <h1 class="title_create_post">Create a post</h1>
+            <h3 class="nameTitle">Title :</h3>
+
+            <p><input type="text" id="title_post" name="title_post" required class="inputField"></p>
+
+            <h2 class="h2_content">Your content :</h2>
+
+            <div class="btnsAdditionInformation">
+                <input type="button" class="btnTextOfPost" id="btnTextOfPost" onclick="show_text_description()">
+                <input type="button" class="btnLocation" id="btnLocation" onclick="show_location()">
+                <input type="button" class="btnFile" id="btnFile">
+            </div>
+
+            <p><textarea id="text_of_post" name="text_of_post" required class="inputFieldContent"></textarea></p>
+
+            <div class="location" id="location">
+                <h3 class="nameTitleLocation" id="nameTitleLocation">Location</h3>
+                <input type="text" class="inputFieldLocation" id="inputFieldLocation">
+            </div>
+
+            <div class="fileDrop" id="fileDrop"></div>
+            <input type="button" class="btnCreate" id="btnCreate" value="Create">
+        </div>
+    </div>
+</body>
+</html>
