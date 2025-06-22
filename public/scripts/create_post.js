@@ -28,7 +28,7 @@ function show_location(){
     const locationInputField = document.getElementById('inputFieldLocation');
     const currentMarginTopOfbtnCreate = parseInt(window.getComputedStyle(btnCreate).marginTop)
 
-    toOperate = 100;
+    toOperate = 30;
     const marginTopNewAdd = currentMarginTopOfbtnCreate + toOperate;
     const marginTopNewMin = currentMarginTopOfbtnCreate - toOperate;
     
