@@ -1,4 +1,3 @@
-// routes/registerRoute.js
 const express = require('express');
 const bcrypt = require('bcrypt');
 const pool = require('../db');
@@ -6,7 +5,6 @@ const pool = require('../db');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-    console.log('Запрос на регистрацию пришёл:', req.body);
     try {
         const { username, password, email } = req.body;
             

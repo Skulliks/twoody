@@ -1,10 +1,21 @@
 function loginUser() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const usernameField = document.getElementById('username').value;
+    const passwordField = document.getElementById('password').value;
 
     if(username && password){
-        showNotification(`${username} successfully logged in!`)
-        setTimeout(() => window.location.href = 'index.html', 750);
+        fetch('/login', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                username: usernameField,
+                password: passwordField,
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.message) { showNotification(data.message); setTimeout(() => window.location.href = './index.html', 1000) }
+            else if (data.error) { showNotification('Error ' + data.error); }
+        });
     } else {
         showNotification("Please fill in all fields.");
         return;

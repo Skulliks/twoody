@@ -2,12 +2,14 @@ const express = require('express');
 const path = require('path');
 const pool = require('./db');
 const app = express();
+const PORT = 3000;
 app.use(express.json());
 
-const registerRoute = require('./route/registerRoute')
+const registerRoute = require('./route/registerRoute');
 app.use('/register', registerRoute);
 
-const PORT = 3000;
+const loginRoute = require('./route/loginRoute');
+app.use('/login', loginRoute);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
