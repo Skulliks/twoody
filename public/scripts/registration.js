@@ -9,21 +9,26 @@ function registerUser() {
     const termsCheckbox = document.getElementById('terms').checked;
 
     if (usernameField && passwordField && confirmPassword && emailField && confirmEmail && privacyCheckbox && termsCheckbox) {
-        fetch('/register', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                username: usernameField,
-                password: passwordField,
-                email: emailField
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            if (data.message) { showNotification(data.message); setTimeout(() => window.location.href = './login.html', 1000) }
-            else if (data.error) { showNotification('Error ' + data.error); }
-        });
-
+        if(confirmEmail == emailField){
+            if(passwordField == confirmPassword){
+                fetch('/register', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        username: usernameField,
+                        password: passwordField,
+                        email: emailField
+                    })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.message) { showNotification(data.message); setTimeout(() => window.location.href = './login.html', 1000) }
+                    else if (data.error) { showNotification('Error ' + data.error); }
+                });
+            }
+            else showNotification("Passwords don't matches")
+        }
+        else showNotification("Emails don't matches")
     }
     else {
         showNotification('Please fill in all fields.');
